@@ -1,8 +1,5 @@
-package com.example.spotify.models;
+package com.example.spotify.Models;
 
-import com.example.spotify.DataObjects.External_urls;
-import com.example.spotify.DataObjects.Followers;
-import com.example.spotify.DataObjects.Image;
 import java.io.Serializable;
 import java.util.ArrayList;
 

@@ -1,6 +1,4 @@
-package com.example.spotify.DataObjects;
-
-import com.example.spotify.models.Artists;
+package com.example.spotify.Models;
 
 import java.io.Serializable;
 
@@ -8,7 +6,7 @@ import java.io.Serializable;
 
 public class Data implements Serializable {
 
-    public Artists artists=new Artists();;
+    public Artists artists;
 
     public Data(){ }
 

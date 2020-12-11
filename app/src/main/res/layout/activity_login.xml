@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/btn"
-    tools:context=".Activities.MainActivity">
+    tools:context=".Views.LoginActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,7 +21,7 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="237dp"
+            android:layout_width="wrap_content"
             android:layout_height="179dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -35,9 +35,9 @@
     <Button
         android:id="@+id/login"
         android:layout_width="149dp"
-        android:layout_height="74dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/corner"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:backgroundTint="#000000"
@@ -50,8 +50,8 @@
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
-        android:layout_width="78dp"
-        android:layout_height="71dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:indeterminate="false"
         android:indeterminateTint="@android:color/black"

@@ -1,4 +1,4 @@
-package com.example.spotify.models;
+package com.example.spotify.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,15 +10,15 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import com.example.spotify.Models.Album;
 import com.example.spotify.R;
 import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
 
-//Album adapter to help fill the albums (items) details in the gridview in Albumss activity
+//Album adapter to help fill the albums (items) details in the gridview in AlbumsActivity activity
 
 public class AlbumAdapter extends BaseAdapter {
+
     public Context context;
     public ArrayList<Album> Albums;
 
@@ -56,24 +56,24 @@ public class AlbumAdapter extends BaseAdapter {
 
         ImageView profilee = convertView.findViewById(R.id.imgalb);
         TextView namee = convertView.findViewById(R.id.namealb);
-        TextView artname=convertView.findViewById(R.id.artistname);
+        TextView artistname=convertView.findViewById(R.id.artistname);
         TextView DateAndTracks = convertView.findViewById(R.id.datetracks);
-        Button prev=convertView.findViewById(R.id.preview);
+        Button PreviewAlbum=convertView.findViewById(R.id.preview);
 
         Album item = Albums.get(position);
 
         namee.setText(item.getAName());
-        int i,n=0;
-        String re="";
+        int i;
+        String ArtistsNames="";
         for(i=0;i<item.getArtists().size();i++){
             if(i<item.getArtists().size()-1)
-             re=re+item.getArtists().get(i).getAAName()+" ,";
-            else re=re+item.getArtists().get(i).getAAName();
+                ArtistsNames=ArtistsNames+item.getArtists().get(i).getAAName()+" ,";
+            else ArtistsNames=ArtistsNames+item.getArtists().get(i).getAAName();
 
         }
-        artname.setText(re);
-        String dt=item.getRelease_date()+"\n"+item.getTotal_tracks()+" tracks";
-        DateAndTracks.setText(dt);
+        artistname.setText(ArtistsNames);
+        String DateTracksValue=item.getRelease_date()+"\n"+item.getTotal_tracks()+" tracks";
+        DateAndTracks.setText(DateTracksValue);
 
         if (item.getImages() != null & item.getImages().size()!=0) {
 
@@ -89,12 +89,12 @@ public class AlbumAdapter extends BaseAdapter {
 
         }
 
-        prev.setOnClickListener(new View.OnClickListener() {
+        PreviewAlbum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent openalb = new Intent(Intent.ACTION_VIEW, Uri.parse(item.getExternal_urls().getSpotify()));
-                 context.startActivity(openalb);
+                Intent openalbum = new Intent(Intent.ACTION_VIEW, Uri.parse(item.getExternal_urls().getSpotify()));
+                 context.startActivity(openalbum);
             }
         });
 

@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Spotify</string>
+    <string name="SCOPES">user-library-modify,user-read-email,user-read-private,streaming</string>
+    <string name="REDIRECT_URI">https://com.example.spotify/callback/</string>
+    <string name="CLIENT_ID">ef3bd01982014562b84ded84b50df3c2</string>
+    <string name="FirstPartUrlArtist">https://api.spotify.com/v1/search?q=</string>
+    <string name="SecondPartUrlArtist">&amp;type=artist&amp;limit=50&amp;offset=0</string>
+    <string name="FirstPartUrlAlbums">https://api.spotify.com/v1/artists/</string>
+    <string name="SecondPartUrlAlbums">/albums?limit=50&amp;offset=0</string>
+    <string name="albums">Albums</string>
+    <string name="login">Login</string>
+    <string name="SearchHint">Search For An Artist</string>
+    <string name="preview">Preview On Spotify</string>
+    <string name="LoginUrl">https://api.spotify.com/v1/me</string>
 </resources>

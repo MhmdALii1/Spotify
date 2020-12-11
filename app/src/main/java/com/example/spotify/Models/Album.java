@@ -1,8 +1,4 @@
-package com.example.spotify.models;
-
-import com.example.spotify.DataObjects.AlbumArtists;
-import com.example.spotify.DataObjects.External_urls;
-import com.example.spotify.DataObjects.Image;
+package com.example.spotify.Models;
 
 import java.io.Serializable;
 import java.util.ArrayList;

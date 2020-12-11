@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cv"
-    android:layout_width="180dp"
-    android:layout_height="360dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     app:cardBackgroundColor="#FFFFFF"
     app:cardCornerRadius="2dp"
     app:cardElevation="2dp"
@@ -14,13 +14,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="344dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
-            android:layout_height="301dp"
+            android:layout_height="290dp"
             android:layout_marginBottom="4dp"
             android:orientation="vertical">
 
@@ -33,8 +33,8 @@
 
                 <ImageView
                     android:id="@+id/imgart"
-                    android:layout_width="match_parent"
-                    android:layout_height="162dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="2dp">
 
@@ -43,24 +43,24 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="133dp"
+                android:layout_height="122dp"
                 android:layout_marginBottom="20dp"
                 android:orientation="vertical">
 
 
                 <TextView
                     android:id="@+id/name"
-                    android:layout_width="153dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
                     android:text=""
                     android:textColor="#000000"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/followers"
-                    android:layout_width="153dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
                     android:layout_marginBottom="4dp"
@@ -73,14 +73,15 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="161dp"
-            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/rate1"
                 android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
                 android:adjustViewBounds="true"
                 android:background="@android:drawable/btn_star_big_on"
@@ -89,7 +90,7 @@
             <ImageView
                 android:id="@+id/rate2"
                 android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
                 android:adjustViewBounds="true"
                 android:background="@android:drawable/btn_star_big_on"
@@ -99,7 +100,7 @@
             <ImageView
                 android:id="@+id/rate3"
                 android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
                 android:adjustViewBounds="true"
                 android:background="@android:drawable/btn_star_big_on"
@@ -109,7 +110,7 @@
             <ImageView
                 android:id="@+id/rate4"
                 android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
                 android:adjustViewBounds="true"
                 android:background="@android:drawable/btn_star_big_on"
@@ -118,7 +119,7 @@
             <ImageView
                 android:id="@+id/rate5"
                 android:layout_width="wrap_content"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
                 android:adjustViewBounds="true"
                 android:background="@android:drawable/btn_star_big_off"

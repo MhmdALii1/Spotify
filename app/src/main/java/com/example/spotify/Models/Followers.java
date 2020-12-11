@@ -1,8 +1,9 @@
-package com.example.spotify.DataObjects;
+package com.example.spotify.Models;
 
 import java.io.Serializable;
 
 public class Followers implements Serializable {
+
     String href;
     int total;
 

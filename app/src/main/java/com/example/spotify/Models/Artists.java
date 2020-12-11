@@ -1,21 +1,21 @@
-package com.example.spotify.models;
+package com.example.spotify.Models;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
-//this object contains some details and all the albums fetched from spotify api of a given artist
+//this object contains some details and all the artists fetched from spotify api for the query from the search
 
-public class Albums implements Serializable {
+public class Artists implements Serializable {
 
     String href;
-    ArrayList<Album> items;
+    ArrayList<Artist> items;
     int limit;
     String next;
     int offset;
     String previous;
     int total;
 
-    public Albums(){ }
+    public Artists(){ }
 
     public String getHref() {
         return href;
@@ -25,11 +25,11 @@ public class Albums implements Serializable {
         this.href = href;
     }
 
-    public ArrayList<Album> getItems() {
+    public ArrayList<Artist> getItems() {
         return items;
     }
 
-    public void setItems(ArrayList<Album> items) {
+    public void setItems(ArrayList<Artist> items) {
         this.items = items;
     }
 

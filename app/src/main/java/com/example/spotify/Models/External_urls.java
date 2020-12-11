@@ -1,4 +1,4 @@
-package com.example.spotify.DataObjects;
+package com.example.spotify.Models;
 
 import java.io.Serializable;
 

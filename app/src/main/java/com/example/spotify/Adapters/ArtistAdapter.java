@@ -1,4 +1,4 @@
-package com.example.spotify.models;
+package com.example.spotify.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,14 +7,15 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.example.spotify.Models.Artist;
 import com.example.spotify.R;
 import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
 
-//Artist adapter to help fill the artits (items) details in the gridview in Artistss activity
+//Artist adapter to help fill the artits (items) details in the gridview in ArtistsActivity activity
 
 public class ArtistAdapter extends BaseAdapter {
+
     public Context context;
     public ArrayList<Artist> Artists;
 

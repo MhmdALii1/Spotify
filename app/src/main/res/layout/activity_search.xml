@@ -6,24 +6,24 @@
     android:layout_height="match_parent"
     android:background="@drawable/pico"
     android:orientation="vertical"
-    tools:context=".Activities.Search">
+    tools:context=".Views.SearchActivity">
 
     <SearchView
         android:id="@+id/search1"
-        android:layout_width="316dp"
+        android:layout_width="300dp"
         android:layout_height="75dp"
         android:layout_gravity="center"
         android:layout_marginTop="160dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/search"
-        android:queryHint="Search For An Artist">
+        android:queryHint="@string/SearchHint">
 
     </SearchView>
 
     <ListView
         android:id="@+id/list"
-        android:layout_width="313dp"
-        android:layout_height="432dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center">
 
     </ListView>
